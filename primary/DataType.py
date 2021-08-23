@@ -35,6 +35,19 @@ print(b, type(b))
 b = False + 0  # 布尔类型可以转成整数类型计算,False为0
 print(b, type(b))
 
+# 对象的布尔值,以下列举为False的情况
+print(bool(0))        # 整数
+print(bool(0.0))      # 浮点数
+print(bool(None))     # 空
+print(bool(''))       # 字符串
+print(bool([]))       # 列表
+print(bool(list()))   # 列表
+print(bool(()))       # 元组
+print(bool(tuple()))  # 元组
+print(bool({}))       # 字典
+print(bool(dict()))   # 字典
+print(bool(set()))    # 集合
+
 # 字符串类型
 c = '人生苦短,我用python'
 print(c, type(c))
