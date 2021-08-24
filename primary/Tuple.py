@@ -4,6 +4,10 @@
     元组的元素不能修改
     没有增删改操作
 """
+# 空元组
+t = ()
+print(t, type(t), id(t))
+
 # 元组初始化1
 t = (1, 'A', True)
 print(t, type(t), id(t))

@@ -5,13 +5,17 @@
     以键值对的方式存储数据
     key不可重复,value可重复
 """
+# 空字典
+d = {}
+print(d, type(d), id(d))
+
 # 字典的初始化1
 d = {'A': 1, 3: 1, True: False}
-print(d)
+print(d, type(d), id(d))
 
 # 字典的初始化2
 d = dict(name='cosmos', id='233')
-print(d)
+print(d, type(d), id(d))
 
 # 获取value(通过key)
 print(d['name'])  # 找不到会报错
