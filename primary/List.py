@@ -101,3 +101,14 @@ print(l := sorted(lst, reverse=True), id(l))  # 降序
 
 # 统计某元素在列表中的个数
 print(lst.count(2))
+
+# 列表判空(方式1)
+l = []
+if l:
+    print("l不为空")
+else:
+    print("l为空")
+
+# 列表判空(方式2)
+if l == []:
+    print("l为空")

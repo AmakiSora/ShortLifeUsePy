@@ -77,3 +77,8 @@ print(e1 := '牛的'.encode('GBK'))  # 编码,GBK一个中文占两个字节
 print(e2 := '牛的'.encode('UTF-8'))  # 编码,UTF-8一个中文占三个字节
 print(e1.decode('GBK'))  # 解码,用不同的编码格式会抛出异常
 print(e2.decode('UTF-8'))  # 解码,用不同的编码格式会抛出异常
+
+# 字符串判空
+s = ''
+if not s:
+    print("s为空")

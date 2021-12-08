@@ -60,3 +60,12 @@ keys = ['A', 'B', 'C']
 values = [1, 2, 3]
 d = {k: v for k, v in zip(keys, values)}
 print(d)
+
+# 字典判空(方式1)
+d = {}
+if not d:
+    print("d为空")
+
+# 字典判空(方式2)
+if d == {}:
+    print("d为空")

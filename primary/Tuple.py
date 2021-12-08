@@ -39,3 +39,11 @@ for i in t:
 
 # 删除元组
 del t
+
+# 元组判空
+t = ()
+if not t:
+    print('t为空')
+
+if t == ():
+    print('t为空')

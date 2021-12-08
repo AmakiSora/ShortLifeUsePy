@@ -69,3 +69,12 @@ print((s - s1) | (s1 - s))  # s和s1的对称差集,等价于symmetric_differenc
 # 集合生成式  {元素 for 变量 in 对象}
 s = {i for i in range(5)}
 print(s)
+
+# 集合判空(方式1)
+s = set()
+if not s:
+    print("s为空")
+
+# 集合判空(方式2)
+if s == set():
+    print("s为空")
