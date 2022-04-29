@@ -78,3 +78,8 @@ if not s:
 # 集合判空(方式2)
 if s == set():
     print("s为空")
+
+# list去重技巧
+l = [1, 1, 3, 3, 5, 6, 6]
+s = list(set(l))
+print(s)

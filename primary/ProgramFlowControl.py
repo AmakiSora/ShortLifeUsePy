@@ -17,6 +17,48 @@ print('a = b' if a == b else 'a != b')  # 简写
 if a == b:
     pass
 
+# 技巧1,all()
+x = "x"
+y = "y"
+z = 50
+if x == "x" and y == "y" and z < 100:
+    pass
+# 等价于
+conditions = [
+    x == "o",
+    y == "p",
+    z < 100,
+]
+if all(conditions):
+    pass
+
+# 技巧2,any()
+x = "x"
+y = "y"
+z = 50
+if x == "x" or y == "y" or z < 100:
+    pass
+# 等价于
+conditions = [
+    x == "o",
+    y == "p",
+    z < 100,
+]
+if any(conditions):
+    pass
+
+# 技巧3,
+name = "ali"
+age = 22
+if name:
+    print(name)
+if name and age > 18:
+    print("ok")
+# 等价于
+print(name if name else "")
+name and print(name)
+age > 18 and name and print("ok")
+
 # 循环控制
 # while的使用
 while a == b:
@@ -41,4 +83,3 @@ for i in 'hello':
 
 for i in range(5):
     print(i)
-
